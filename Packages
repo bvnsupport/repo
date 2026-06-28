@@ -1,0 +1,19 @@
+Package: com.bvn.socialsuite
+Name: Social Suite
+Description: Tinh chỉnh tốt nhất cho ứng dụng xã hội
+Maintainer: BVN
+Author: BVN
+Section: Tweaks
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
+Conflicts: com.bvn.fbpp, com.bvn.mess++, com.bvn.tiktokplus, com.bvn.youtubex, com.bvn.threadsaver, com.bvn.threadsadblock, com.bvn.yttools, com.bvn.ytlogopremium, com.bvn.instagramtools
+Replaces: com.bvn.fbpp, com.bvn.mess++, com.bvn.tiktokplus, com.bvn.youtubex, com.bvn.threadsaver, com.bvn.threadsadblock, com.bvn.yttools, com.bvn.ytlogopremium, com.bvn.instagramtools
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 4860
+Filename: debs/com.bvn.socialsuite_1.0.2_iphoneos-arm64.deb
+Size: 812344
+MD5sum: 4c7419506036f532413e1fe3865216e4
+SHA1: ee6e24c1cef2eb34cfd8b2d9e934e97d96c7913f
+SHA256: e218e86ddbeb9baabfb9e253cdf877cd7f3ce9bdfb31bc7f74e22a4cadb758de
+
