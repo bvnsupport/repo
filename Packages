@@ -1,19 +1,36 @@
-Package: com.bvn.socialsuite
-Name: Social Suite
-Description: Tinh chỉnh tốt nhất cho ứng dụng xã hội
+Package: com.bvn.djiflyviethoa
+Version: 1.0.0+debug
+Architecture: iphoneos-arm64
 Maintainer: BVN
-Author: BVN
+Installed-Size: 716
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: debs/com.bvn.djiflyviethoa_1.0.0+debug_iphoneos-arm64.deb
+Size: 89472
+MD5sum: bbdf19e0c8a49a466d5bb7643673d819
+SHA1: 470fd549f6180eeab2c0f9e62d1f3c887eeac83c
+SHA256: c033d304de80c01ef183b033eabd55262e1a19cce823bdd72c50c741254a6aa4
 Section: Tweaks
+Description: Việt hoá giao diện DJI Fly (com.dji.golite)
+Author: BVN
+Name: DJI Fly Việt Hoá
+
+Package: com.bvn.socialsuite
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 4860
 Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader
 Conflicts: com.bvn.fbpp, com.bvn.mess++, com.bvn.tiktokplus, com.bvn.youtubex, com.bvn.threadsaver, com.bvn.threadsadblock, com.bvn.yttools, com.bvn.ytlogopremium, com.bvn.instagramtools
 Replaces: com.bvn.fbpp, com.bvn.mess++, com.bvn.tiktokplus, com.bvn.youtubex, com.bvn.threadsaver, com.bvn.threadsadblock, com.bvn.yttools, com.bvn.ytlogopremium, com.bvn.instagramtools
+Filename: debs/com.bvn.socialsuite_1.0.4_iphoneos-arm64.deb
+Size: 811224
+MD5sum: f2ad731b25d8a2bc4f2d700300452f0a
+SHA1: d6b87cd73dc989faa390e3b784c376f6424fecaf
+SHA256: 93e82d3ddd1da778a036d2bf567948b77d77a65c06e4ceb5e3f3f29cafef9a14
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng xã hội
+Author: BVN
 Icon: https://bvnrepo.xyz/icon/tinhchinh.png
-Architecture: iphoneos-arm64
-Version: 1.0.2
-Installed-Size: 4860
-Filename: debs/com.bvn.socialsuite_1.0.2_iphoneos-arm64.deb
-Size: 812344
-MD5sum: 4c7419506036f532413e1fe3865216e4
-SHA1: ee6e24c1cef2eb34cfd8b2d9e934e97d96c7913f
-SHA256: e218e86ddbeb9baabfb9e253cdf877cd7f3ce9bdfb31bc7f74e22a4cadb758de
+Name: Social Suite (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/SocialSuite.json
 
