@@ -1,448 +1,1172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BVN Repo – Jailbreak</title>
-  <meta name="description" content="BVN Repo - Kho tweak Crack, Việt hoá cho Jailbreak iOS." />
-  <meta name="theme-color" content="#0f172a" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070A12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="BVN Repo — kho tweak jailbreak iOS cho Sileo, Zebra và Cydia.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BVN Repo">
+  <meta property="og:description" content="Kho tweak jailbreak iOS được quản lý bởi Nhật Biện.">
+  <meta property="og:url" content="https://bvnsupport.github.io/repo/">
+  <title>BVN Repo — iOS Tweak Repository</title>
 
   <style>
     :root {
-      --bg: #f4f7fb;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #64748b;
-      --border: #e2e8f0;
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --success: #16a34a;
-      --danger: #ef4444;
-      --shadow: 0 12px 35px rgba(15, 23, 42, 0.12);
+      color-scheme: dark;
+      --bg: #070a12;
+      --bg-2: #0b1020;
+      --card: rgba(255,255,255,.085);
+      --card-2: rgba(255,255,255,.13);
+      --line: rgba(255,255,255,.16);
+      --text: #f6f8ff;
+      --muted: rgba(246,248,255,.68);
+      --soft: rgba(246,248,255,.45);
+      --blue: #6ee7ff;
+      --purple: #a78bfa;
+      --pink: #ff79c6;
+      --green: #7df9bd;
+      --warning: #ffd166;
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --shadow: 0 26px 90px rgba(0,0,0,.45);
+      --max: 1080px;
+      --blur: blur(22px) saturate(140%);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
     }
 
-    body.dark {
-      --bg: #020617;
-      --card: #0f172a;
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --border: #1e293b;
-      --primary: #60a5fa;
-      --primary-dark: #3b82f6;
-      --shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    body[data-theme="light"] {
+      color-scheme: light;
+      --bg: #eef5ff;
+      --bg-2: #dfe8f7;
+      --card: rgba(255,255,255,.62);
+      --card-2: rgba(255,255,255,.82);
+      --line: rgba(18,28,45,.10);
+      --text: #12213b;
+      --muted: rgba(18,33,59,.70);
+      --soft: rgba(18,33,59,.56);
+      --shadow: 0 24px 70px rgba(65,90,145,.18);
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      margin: 0;
       min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(22, 163, 74, 0.12), transparent 30%),
-        var(--bg);
+      margin: 0;
       color: var(--text);
-      transition: background 0.25s ease, color 0.25s ease;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(110,231,255,.22), transparent 30%),
+        radial-gradient(circle at 88% 12%, rgba(167,139,250,.23), transparent 34%),
+        radial-gradient(circle at 55% 92%, rgba(255,121,198,.18), transparent 28%),
+        linear-gradient(135deg, #05070d 0%, #0a1020 42%, #06070d 100%);
+      overflow-x: hidden;
+      transition: background .28s ease, color .28s ease;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    body[data-theme="light"] {
+      background:
+        radial-gradient(circle at 12% 10%, rgba(110,231,255,.28), transparent 30%),
+        radial-gradient(circle at 88% 12%, rgba(167,139,250,.20), transparent 34%),
+        radial-gradient(circle at 55% 92%, rgba(255,121,198,.16), transparent 28%),
+        linear-gradient(135deg, #f7faff 0%, #e8f0ff 42%, #fbfdff 100%);
     }
 
-    .page {
-      width: min(980px, 100%);
-      margin: 0 auto;
-      padding: 28px 16px 42px;
-    }
-
-    .hero {
-      display: grid;
-      gap: 18px;
-      text-align: center;
-      padding: 28px 14px 20px;
-    }
-
-    .logo {
-      width: 92px;
-      height: 92px;
-      margin: 0 auto;
-      display: grid;
-      place-items: center;
-      border-radius: 28px;
-      background: linear-gradient(145deg, #2563eb, #0f172a);
-      color: #fff;
-      font-size: 42px;
-      font-weight: 900;
-      box-shadow: var(--shadow);
-      user-select: none;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(36px, 7vw, 62px);
-      letter-spacing: -1.5px;
-      line-height: 1;
-    }
-
-    .hero p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.5;
-    }
-
-    .badge-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 2px;
-    }
-
-    .badge {
-      padding: 8px 12px;
-      border: 1px solid var(--border);
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      width: 430px;
+      height: 430px;
       border-radius: 999px;
-      background: color-mix(in srgb, var(--card) 86%, transparent);
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
+      filter: blur(32px);
+      opacity: .62;
+      pointer-events: none;
+      z-index: -2;
+      animation: floatOrb 12s ease-in-out infinite alternate;
+    }
+    body::before {
+      left: -150px;
+      top: 170px;
+      background: conic-gradient(from 90deg, var(--blue), var(--purple), transparent, var(--blue));
+    }
+    body::after {
+      right: -170px;
+      bottom: 50px;
+      background: conic-gradient(from 180deg, var(--pink), var(--purple), transparent, var(--green));
+      animation-delay: -3s;
     }
 
-    .card {
-      background: color-mix(in srgb, var(--card) 96%, transparent);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 22px;
-      margin: 16px 0;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(12px);
+    @keyframes floatOrb {
+      from { transform: translate3d(0,0,0) scale(1); }
+      to { transform: translate3d(26px,-30px,0) scale(1.08); }
     }
 
-    .card h2 {
-      margin: 0 0 14px;
-      font-size: 22px;
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: .18;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
     }
 
-    .repo-box {
-      display: grid;
-      gap: 12px;
+    .wrap {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 0 auto;
     }
 
-    .repo-url {
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: max(12px, env(safe-area-inset-top)) 0 12px;
+      backdrop-filter: blur(18px) saturate(150%);
+      -webkit-backdrop-filter: blur(18px) saturate(150%);
+      background: linear-gradient(180deg, rgba(7,10,18,.72), rgba(7,10,18,.18));
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
       gap: 12px;
-      padding: 14px 14px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: color-mix(in srgb, var(--bg) 80%, transparent);
+      min-width: 0;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      display: grid;
+      place-items: center;
+      position: relative;
+      flex: 0 0 auto;
       overflow: hidden;
-    }
-
-    code {
-      color: var(--text);
-      font-size: 15px;
-      word-break: break-all;
-    }
-
-    button,
-    .btn {
+      isolation: isolate;
+      background:
+        radial-gradient(circle at 30% 22%, rgba(255,255,255,.95), rgba(255,255,255,.18) 18%, transparent 32%),
+        conic-gradient(from 210deg, var(--blue), var(--purple), var(--pink), var(--green), var(--blue));
       border: 0;
-      border-radius: 15px;
-      padding: 12px 15px;
-      background: var(--primary);
+      outline: 1px solid rgba(255,255,255,.18);
+      outline-offset: -1px;
+      box-shadow:
+        0 14px 34px rgba(0,0,0,.30),
+        0 0 34px rgba(110,231,255,.16),
+        inset 0 1px 0 rgba(255,255,255,.50),
+        inset 0 -18px 28px rgba(0,0,0,.22);
+    }
+
+    .logo::before {
+      content: "";
+      position: absolute;
+      inset: -38%;
+      background: conic-gradient(from 30deg, var(--blue), var(--purple), var(--pink), var(--green), var(--blue));
+      animation: spin 7s linear infinite;
+      opacity: .68;
+      filter: blur(1px);
+    }
+    .logo::after {
+      content: "B";
+      position: absolute;
+      inset: 6px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      background:
+        linear-gradient(155deg, rgba(255,255,255,.24), rgba(255,255,255,.06)),
+        rgba(7,10,18,.70);
+      backdrop-filter: blur(18px) saturate(155%);
+      -webkit-backdrop-filter: blur(18px) saturate(155%);
+      font-weight: 950;
+      font-size: 25px;
+      letter-spacing: -.08em;
       color: #fff;
-      font-size: 15px;
-      font-weight: 800;
+      text-shadow: 0 0 22px rgba(110,231,255,.48);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.2);
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .brand-text strong {
+      display: block;
+      line-height: 1.08;
+      font-size: 16px;
+      letter-spacing: .01em;
+    }
+    .brand-text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 56vw;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .pill {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+      padding: 10px 13px;
+      border-radius: 999px;
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
       cursor: pointer;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.15);
+    }
+    .pill:hover { transform: translateY(-1px); background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.24); }
+
+    .mini-toggle {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 7px;
+      min-width: 54px;
+      min-height: 38px;
+      padding: 9px 12px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .mini-toggle .mini-toggle-text {
+      font-size: 12px;
+      letter-spacing: .02em;
+    }
+    .mini-toggle .mini-toggle-icon {
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.15);
+    }
+    .lang-btn {
+      min-width: 43px;
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 10px;
+      color: rgba(255,255,255,.72);
+      background: transparent;
+      font-weight: 900;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+    .lang-btn.active {
+      color: #07101b;
+      background: linear-gradient(135deg, var(--blue), var(--green));
+      box-shadow: 0 10px 25px rgba(110,231,255,.24), inset 0 1px 0 rgba(255,255,255,.34);
+    }
+    .lang-btn:not(.active):hover { color: #fff; background: rgba(255,255,255,.1); }
+
+    .hero {
+      padding: 54px 0 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
       gap: 8px;
-      transition: transform 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+      margin-bottom: 18px;
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      background: rgba(255,255,255,.075);
+      color: rgba(255,255,255,.78);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.14);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 22px var(--green);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 10vw, 118px);
+      line-height: .88;
+      letter-spacing: -.08em;
+      font-weight: 950;
+      text-wrap: balance;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #fff 0%, #aeeaff 28%, #c7b9ff 58%, #ffb5de 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 60px rgba(110,231,255,.16);
+    }
+
+    .subtitle {
+      width: min(780px, 100%);
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2.6vw, 22px);
+      line-height: 1.55;
+      text-wrap: balance;
+    }
+
+    .hero-card {
+      position: relative;
+      width: min(900px, 100%);
+      margin: 34px auto 0;
+      padding: 18px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(255,255,255,.13), rgba(255,255,255,.055));
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.22);
+      overflow: hidden;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(120deg, rgba(110,231,255,.2), transparent 32%, rgba(167,139,250,.18), transparent 72%, rgba(255,121,198,.2));
+      pointer-events: none;
+      mask: linear-gradient(#000, transparent 58%);
+      -webkit-mask: linear-gradient(#000, transparent 58%);
+    }
+
+    .repo-line {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 13px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.13);
+      background: rgba(0,0,0,.18);
+      text-align: left;
+      overflow: hidden;
+    }
+    .repo-url {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: rgba(255,255,255,.86);
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 13px;
     }
 
-    button:active,
-    .btn:active {
-      transform: scale(0.97);
-    }
-
-    button:hover,
-    .btn:hover {
-      background: var(--primary-dark);
-    }
-
-    .btn.secondary {
-      background: color-mix(in srgb, var(--card) 80%, var(--primary) 20%);
+    .copy-btn {
+      border: 0;
+      border-radius: 14px;
+      background: rgba(255,255,255,.12);
       color: var(--text);
-      border: 1px solid var(--border);
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease;
     }
+    .copy-btn:hover { transform: translateY(-1px); background: rgba(255,255,255,.18); }
 
-    .btn.green {
-      background: var(--success);
-    }
-
-    .btn.red {
-      background: var(--danger);
-    }
-
-    .buttons {
+    .add-grid {
+      margin-top: 12px;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
     }
 
-    .extra-links {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+    .add-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       gap: 10px;
-      margin-top: 10px;
+      min-height: 58px;
+      border-radius: 19px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.06));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+      font-weight: 800;
+      transition: transform .22s ease, background .22s ease, border-color .22s ease;
+    }
+    .add-btn:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(145deg, rgba(255,255,255,.2), rgba(255,255,255,.08));
+      border-color: rgba(255,255,255,.28);
+    }
+    .add-btn .icon { font-size: 20px; }
+
+    .section {
+      padding: 22px 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(25px, 4vw, 40px);
+      letter-spacing: -.04em;
+    }
+    .section-title p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .glass {
+      border: 1px solid rgba(255,255,255,.14);
+      background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.05));
+      border-radius: var(--radius-xl);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: 0 18px 55px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.14);
+    }
+
+    .search-card {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 16px;
+      border-radius: 18px;
+      background: rgba(0,0,0,.2);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .search-wrap span { opacity: .72; }
+    .search-wrap input {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--text);
+      min-width: 0;
+    }
+    .search-wrap input::placeholder { color: rgba(255,255,255,.45); }
+
+    .stats {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 18px 0 0;
+    }
+    .stat {
+      min-width: 150px;
+      padding: 14px 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.065);
+      text-align: left;
+    }
+    .stat b { display: block; font-size: 22px; letter-spacing: -.03em; }
+    .stat span { color: var(--muted); font-size: 13px; }
+
+    .chips {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0 18px;
+    }
+    .chip {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.07);
+      color: rgba(255,255,255,.84);
+      border-radius: 999px;
+      padding: 10px 13px;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+    .chip.active,
+    .chip:hover {
+      background: rgba(110,231,255,.18);
+      border-color: rgba(110,231,255,.38);
+      color: #fff;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .package-card {
+      position: relative;
+      padding: 16px;
+      min-height: 190px;
+      overflow: hidden;
+      transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    }
+    .package-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,.26);
+      background: linear-gradient(145deg, rgba(255,255,255,.145), rgba(255,255,255,.055));
+    }
+    .package-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 13px;
+    }
+    .pkg-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 17px;
+      border: 1px solid rgba(255,255,255,.16);
+      background:
+        linear-gradient(145deg, rgba(110,231,255,.28), rgba(167,139,250,.18)),
+        rgba(255,255,255,.08);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      flex: 0 0 auto;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 14px 30px rgba(0,0,0,.25);
+    }
+    .pkg-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .pkg-icon span { font-weight: 950; font-size: 20px; }
+    .pkg-name {
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .pkg-version {
+      display: inline-flex;
+      margin-top: 5px;
+      color: rgba(255,255,255,.64);
+      font-size: 12px;
+    }
+    .pkg-desc {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 63px;
+    }
+    .pkg-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .badge {
+      color: rgba(255,255,255,.76);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 12px;
+    }
+    .pkg-link {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+    }
+
+    .state {
+      padding: 34px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .loader {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      margin: 0 auto 14px;
+      border: 3px solid rgba(255,255,255,.12);
+      border-top-color: rgba(110,231,255,.8);
+      animation: spin .9s linear infinite;
     }
 
     .info-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: 1.15fr .85fr;
+      gap: 14px;
+    }
+    .info-card { padding: 20px; }
+    .info-card h3 { margin: 0 0 12px; font-size: 21px; letter-spacing: -.03em; }
+    .info-card p { margin: 0; color: var(--muted); line-height: 1.65; }
+    .mini-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .mini-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 13px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 16px;
+      background: rgba(0,0,0,.16);
+    }
+    .mini-row span:first-child { color: var(--muted); }
+    .mini-row span:last-child { font-weight: 800; text-align: right; }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
     }
-
-    .info-item {
-      padding: 14px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: color-mix(in srgb, var(--bg) 78%, transparent);
-      min-height: 86px;
-    }
-
-    .info-item strong {
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .info-item span {
-      color: var(--muted);
-      line-height: 1.45;
-    }
-
-    .donate {
+    .social {
+      padding: 17px 12px;
+      display: grid;
+      place-items: center;
+      gap: 7px;
       text-align: center;
+      min-height: 108px;
+      border-radius: 23px;
+      transition: transform .22s ease, background .22s ease, border-color .22s ease;
     }
+    .social:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.26); background: rgba(255,255,255,.12); }
+    .social b { font-size: 15px; }
+    .social span:first-child { font-size: 26px; }
+    .social small { color: var(--muted); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-    .donate .stk {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 18px;
-      background: color-mix(in srgb, var(--bg) 78%, transparent);
-      border: 1px solid var(--border);
-      margin: 8px 0 10px;
-      font-weight: 900;
-      letter-spacing: 0.4px;
-    }
-
-    .footer {
-      margin-top: 18px;
+    footer {
+      padding: 28px 0 max(30px, env(safe-area-inset-bottom));
+      color: var(--soft);
       text-align: center;
-      color: var(--muted);
-      font-size: 14px;
     }
 
     .toast {
       position: fixed;
       left: 50%;
-      bottom: 26px;
+      bottom: max(20px, env(safe-area-inset-bottom));
       transform: translateX(-50%) translateY(20px);
-      background: #111827;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 999px;
-      box-shadow: var(--shadow);
       opacity: 0;
       pointer-events: none;
-      transition: all 0.22s ease;
-      font-weight: 800;
-      z-index: 999;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: rgba(20,24,38,.76);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: 0 18px 55px rgba(0,0,0,.35);
+      transition: .26s ease;
+      z-index: 100;
+      white-space: nowrap;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+
+
+
+    .bank-copy-card {
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+    .bank-copy-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .bank-copy-card b {
+      display: block;
+      font-size: 24px;
+      letter-spacing: .02em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .bank-copy-btn {
+      border: 0;
+      border-radius: 16px;
+      padding: 12px 14px;
+      color: var(--text);
+      background: linear-gradient(135deg, rgba(110,231,255,.22), rgba(167,139,250,.18));
+      border: 1px solid rgba(255,255,255,.14);
+      cursor: pointer;
+      font-weight: 900;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18);
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      white-space: nowrap;
+    }
+    .bank-copy-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(110,231,255,.34);
+      background: linear-gradient(135deg, rgba(110,231,255,.30), rgba(167,139,250,.24));
     }
 
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
+    .back-btn { display: none; }
+
+    
+    body[data-theme="light"] .topbar {
+      background: linear-gradient(180deg, rgba(247,250,255,.86), rgba(247,250,255,.36));
+      border-bottom: 1px solid rgba(18,28,45,.08);
+    }
+    body[data-theme="light"] .pill,
+    body[data-theme="light"] .lang-switch,
+    body[data-theme="light"] .eyebrow,
+    body[data-theme="light"] .glass,
+    body[data-theme="light"] .hero-card,
+    body[data-theme="light"] .stat,
+    body[data-theme="light"] .mini-row,
+    body[data-theme="light"] .social {
+      border-color: rgba(18,28,45,.08);
+      box-shadow: 0 16px 40px rgba(81,104,153,.12), inset 0 1px 0 rgba(255,255,255,.68);
+    }
+    body[data-theme="light"] .pill,
+    body[data-theme="light"] .lang-switch,
+    body[data-theme="light"] .eyebrow,
+    body[data-theme="light"] .hero-card,
+    body[data-theme="light"] .glass,
+    body[data-theme="light"] .stat,
+    body[data-theme="light"] .social,
+    body[data-theme="light"] .toast {
+      background: rgba(255,255,255,.56);
+      backdrop-filter: blur(20px) saturate(155%);
+      -webkit-backdrop-filter: blur(20px) saturate(155%);
+    }
+    body[data-theme="light"] .lang-btn:not(.active) { color: rgba(18,33,59,.72); }
+    body[data-theme="light"] .lang-btn:not(.active):hover { color: var(--text); background: rgba(18,33,59,.06); }
+    body[data-theme="light"] .eyebrow,
+    body[data-theme="light"] .repo-url,
+    body[data-theme="light"] .badge { color: rgba(18,33,59,.80); }
+    body[data-theme="light"] .repo-line,
+    body[data-theme="light"] .search-wrap,
+    body[data-theme="light"] .mini-row {
+      background: rgba(255,255,255,.46);
+      border-color: rgba(18,28,45,.08);
+    }
+    body[data-theme="light"] .copy-btn,
+    body[data-theme="light"] .tiny-copy,
+    body[data-theme="light"] .bank-copy-btn {
+      background: rgba(18,33,59,.06);
+      border-color: rgba(18,28,45,.08);
+    }
+    body[data-theme="light"] .bank-copy-card {
+      background: rgba(255,255,255,.46);
+      border-color: rgba(18,28,45,.08);
+    }
+    body[data-theme="light"] .add-btn {
+      background: linear-gradient(145deg, rgba(255,255,255,.82), rgba(255,255,255,.52));
+      border-color: rgba(18,28,45,.08);
+    }
+    body[data-theme="light"] .subtitle,
+    body[data-theme="light"] .section-title p,
+    body[data-theme="light"] .info-card p,
+    body[data-theme="light"] footer,
+    body[data-theme="light"] .brand-text span,
+    body[data-theme="light"] .stat span,
+    body[data-theme="light"] .social small,
+    body[data-theme="light"] .mini-row span:first-child {
+      color: var(--muted);
+    }
+    body[data-theme="light"] .logo {
+      outline-color: rgba(18,28,45,.08);
+      box-shadow:
+        0 16px 34px rgba(85,108,160,.18),
+        0 0 38px rgba(110,231,255,.12),
+        inset 0 1px 0 rgba(255,255,255,.82),
+        inset 0 -14px 24px rgba(69,86,132,.12);
+    }
+    body[data-theme="light"] .logo::after {
+      background:
+        linear-gradient(155deg, rgba(255,255,255,.88), rgba(255,255,255,.62)),
+        rgba(255,255,255,.74);
+      color: #13233d;
+      text-shadow: 0 0 18px rgba(110,231,255,.22);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
     }
 
-    .top-actions {
-      display: flex;
-      justify-content: center;
-      margin-top: 4px;
+    @media (max-width: 860px) {
+      .package-grid { grid-template-columns: repeat(2, 1fr); }
+      .info-grid { grid-template-columns: 1fr; }
+      .social-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-title { align-items: flex-start; flex-direction: column; }
     }
 
-    @media (max-width: 720px) {
-      .buttons,
-      .extra-links,
-      .info-grid {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 22px, var(--max)); }
+      .topbar { padding-bottom: 10px; }
+      .brand-text span { max-width: 44vw; }
+      .nav-actions .github-link { display: none; }
+      .hero { padding-top: 42px; }
+      .hero-card { padding: 12px; border-radius: 26px; }
+      .repo-line { grid-template-columns: 1fr; }
+      .copy-btn { width: 100%; }
+      .bank-copy-card { grid-template-columns: 1fr; }
+      .bank-copy-btn { width: 100%; }
+      .add-grid { grid-template-columns: 1fr; }
+      .search-card { grid-template-columns: 1fr; }
+      .package-grid { grid-template-columns: 1fr; }
+      .stat { flex: 1 1 130px; min-width: 130px; }
+      .social-grid { grid-template-columns: 1fr 1fr; }
+      .hero-card::before { opacity: .7; }
+    }
 
-      .repo-url {
-        align-items: stretch;
-        flex-direction: column;
-      }
-
-      .repo-url button {
-        width: 100%;
-      }
-
-      .card {
-        border-radius: 22px;
-        padding: 18px;
-      }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
     }
   </style>
 </head>
-
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="logo">BVN</div>
-      <div>
-        <h1>BVN Repo</h1>
-        <p>Kho tweak Crack – Việt Hoá</p>
-      </div>
+  <div class="noise" aria-hidden="true"></div>
 
-      <div class="badge-row">
-        <span class="badge">Jailbreak</span>
-        <span class="badge">iOS 15–16</span>
-        <span class="badge">Rootless</span>
-        <span class="badge">Công nghệ</span>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="BVN Repo">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>BVN Repo</strong>
+          <span data-i18n="brandTagline">Jailbreak • Rootless</span>
+        </span>
+      </a>
+      <div class="nav-actions">
+        <button class="pill mini-toggle" id="langToggle" type="button" aria-label="Đổi ngôn ngữ" title="Đổi ngôn ngữ">
+          <span class="mini-toggle-icon">🌐</span>
+          <span class="mini-toggle-text" id="langLabel">VI</span>
+        </button>
+        <button class="pill mini-toggle" id="themeToggle" type="button" aria-label="Đổi giao diện" title="Đổi giao diện">
+          <span class="mini-toggle-icon" id="themeIcon">🌙</span>
+          <span class="mini-toggle-text" id="themeLabel">Tối</span>
+        </button>
+        <a class="pill github-link" href="https://github.com/bvnsupport" target="_blank" rel="noopener">GitHub</a>
       </div>
+    </div>
+  </header>
 
-      <div class="top-actions">
-        <button class="btn secondary" onclick="toggleDarkMode()" id="theme-btn">🌙 Đang dùng Dark mode</button>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow"><span class="dot"></span><span data-i18n="eyebrow">BVN Support Repository</span></div>
+      <h1 class="gradient-text">BVN Repo</h1>
+      <p class="subtitle" data-i18n="subtitle">Kho tweak jailbreak iOS được quản lý bởi Nhật Biện. Thêm repo vào Sileo, Zebra hoặc Cydia để nhận bản cập nhật mới nhất.</p>
+
+      <div class="hero-card">
+        <div class="repo-line" aria-label="Repo URL">
+          <div class="repo-url" id="repoUrl">https://bvnsupport.github.io/repo/</div>
+          <button class="copy-btn" type="button" data-copy="https://bvnsupport.github.io/repo/" data-i18n="copyRepo">Sao chép repo</button>
+        </div>
+        <div class="add-grid">
+          <a class="add-btn" href="sileo://source/https://bvnsupport.github.io/repo/">
+            <span class="icon">✨</span><span data-i18n="addSileo">Thêm vào Sileo</span>
+          </a>
+          <a class="add-btn" href="zbra://sources/add/https://bvnsupport.github.io/repo/">
+            <span class="icon">🦓</span><span data-i18n="addZebra">Thêm vào Zebra</span>
+          </a>
+          <a class="add-btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://bvnsupport.github.io/repo/">
+            <span class="icon">📦</span><span data-i18n="addCydia">Thêm vào Cydia</span>
+          </a>
+        </div>
+
+        <div class="stats" id="stats">
+          <div class="stat"><b>BVN</b><span data-i18n="repoStatus">Repo chính thức</span></div>
+          <div class="stat"><b>iOS 15+</b><span data-i18n="rootlessFocus">Tối ưu Rootless</span></div>
+          <div class="stat"><b>24/7</b><span data-i18n="supportFast">Hỗ trợ cộng đồng</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Đường dẫn repo</h2>
-
-      <div class="repo-box">
-        <div class="repo-url">
-          <code id="repo-url">https://bvnsupport.github.io/repo/</code>
-          <button onclick="copyText('https://bvnsupport.github.io/repo/')">Sao chép</button>
-        </div>
-
-        <div class="buttons">
-          <a class="btn" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://bvnsupport.github.io/repo/">Thêm vào Cydia</a>
-          <a class="btn green" href="sileo://source/https://bvnsupport.github.io/repo/">Thêm vào Sileo</a>
-          <a class="btn red" href="zbra://sources/add/https://bvnsupport.github.io/repo/">Thêm vào Zebra</a>
-        </div>
-
-        <div class="extra-links">
-          <a class="btn secondary" href="https://bvnrepo.xyz/roothide">Repo Roothide</a>
-          <a class="btn secondary" href="https://bvnrepo999.github.io">Kho iPA</a>
-          <a class="btn secondary" href="https://bvnrepo999.github.io/trollfools">File Tiêm – TrollFools</a>
+    <section class="section wrap" id="info">
+      <div class="section-title">
+        <div>
+          <h2 data-i18n="infoTitle">Thông tin</h2>
+          <p data-i18n="infoDesc">Thông tin nhanh về BVN Repo và kênh hỗ trợ.</p>
         </div>
       </div>
-    </section>
-
-    <section class="card">
-      <h2>Thông tin liên hệ</h2>
-
       <div class="info-grid">
-        <div class="info-item">
-          <strong>Repo được phát triển bởi</strong>
-          <span>BVN</span>
-        </div>
-
-        <div class="info-item">
-          <strong>Mô tả</strong>
-          <span>Kho lưu trữ các Tweak Việt hoá cho cộng đồng Jailbreak.</span>
-        </div>
-
-        <div class="info-item">
-          <strong>Hỗ trợ</strong>
-          <span>Bug, góp ý, yêu cầu tính năng mới.</span>
-        </div>
-
-        <div class="info-item">
-          <strong>Tình trạng</strong>
-          <span>Đang cập nhật tweak cho iOS 15–16 rootless.</span>
-        </div>
-
-        <div class="info-item">
-          <strong>Email</strong>
-          <span><a href="mailto:bvnrepo@gmail.com">bvnrepo@gmail.com</a></span>
-        </div>
-
-        <div class="info-item">
-          <strong>Telegram</strong>
-          <span><a href="https://t.me/bvnrepo">Nhóm hỗ trợ</a></span>
-        </div>
+        <article class="glass info-card">
+          <h3 data-i18n="repoInfoTitle">BVN Repo</h3>
+          <p data-i18n="repoInfoText">Repo dành cho cộng đồng jailbreak, tập trung vào tweak iOS, Việt hoá, rootless và các bản cập nhật do BVN Support quản lý.</p>
+          <div class="mini-list">
+            <div class="mini-row"><span data-i18n="managerLabel">Quản lý</span><span>Nhật Biện</span></div>
+            <div class="mini-row"><span data-i18n="repoUrlLabel">Repo URL</span><span>bvnsupport.github.io/repo</span></div>
+            <div class="mini-row"><span data-i18n="supportLabel">Hỗ trợ</span><span>Telegram / Group</span></div>
+          </div>
+        </article>
+        <article class="glass info-card">
+          <h3 data-i18n="donateTitle">Ủng hộ tôi</h3>
+          <p data-i18n="donateText">Cảm ơn bro đã ủng hộ để repo có thêm động lực cập nhật tweak mới.</p>
+          <div class="bank-copy-card">
+            <div>
+              <small data-i18n="bankNumberLabel">STK</small>
+              <b>900959999</b>
+            </div>
+            <button class="bank-copy-btn" type="button" data-copy="900959999" data-copy-kind="bank" data-i18n="copyStk">Sao chép STK</button>
+          </div>
+          <div class="mini-list">
+            <div class="mini-row"><span data-i18n="bankLabel">Ngân hàng</span><span>MBBank</span></div>
+            <div class="mini-row"><span data-i18n="bankOwnerLabel">Chủ TK</span><span>BIEN VAN NHAT</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="card donate">
-      <h2>Ủng hộ Donate</h2>
-      <div class="stk">
-        <span>STK: 900959999</span>
-        <button onclick="copyText('900959999')">Sao chép</button>
+    <section class="section wrap" id="connect">
+      <div class="section-title">
+        <div>
+          <h2 data-i18n="connectTitle">Kết nối với BVN</h2>
+          <p data-i18n="connectDesc">Theo dõi BVN để nhận thông báo repo, tweak mới và hỗ trợ lỗi.</p>
+        </div>
       </div>
-      <p><strong>Ngân hàng:</strong> MBBank</p>
-      <p><strong>Chủ TK:</strong> BIEN VAN NHAT</p>
-      <p>❤️ Ủng hộ giúp Repo phát triển ❤️</p>
+      <div class="social-grid">
+        <a class="glass social" href="https://t.me/bvnsupport" target="_blank" rel="noopener">
+          <span>✈️</span><b>Telegram</b><small>@bvnsupport</small>
+        </a>
+        <a class="glass social" href="https://t.me/bvnrepo" target="_blank" rel="noopener">
+          <span>💬</span><b>Group</b><small>@bvnrepo</small>
+        </a>
+        <a class="glass social" href="https://x.com/BvnRepo" target="_blank" rel="noopener">
+          <span>𝕏</span><b>X</b><small>@BvnRepo</small>
+        </a>
+        <a class="glass social" href="https://github.com/bvnsupport" target="_blank" rel="noopener">
+          <span>⌘</span><b>GitHub</b><small>bvnsupport</small>
+        </a>
+      </div>
     </section>
-
-    <footer class="footer">
-      © BVN Repo Made for Jailbreak Community
-    </footer>
   </main>
+
+  <footer class="wrap">
+    © <span id="year"></span> <span data-i18n="footerText">BVN Repo. Dành cho cộng đồng Jailbreak.</span>
+  </footer>
 
   <div class="toast" id="toast">Đã sao chép</div>
 
   <script>
-    const body = document.body;
-    const themeBtn = document.getElementById("theme-btn");
+    const toast = document.getElementById('toast');
+    const langToggle = document.getElementById('langToggle');
+    const langLabel = document.getElementById('langLabel');
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
 
-    function applyTheme() {
-      const savedTheme = localStorage.getItem("bvn-theme") || "dark";
-      body.classList.toggle("dark", savedTheme === "dark");
-      themeBtn.textContent = savedTheme === "dark" ? "🌙 Đang dùng Dark mode" : "☀️ Đang dùng Light mode";
+    const i18n = {
+      vi: {
+        brandTagline: 'Jailbreak • Rootless',
+        eyebrow: 'BVN Support Repository',
+        subtitle: 'Kho tweak jailbreak iOS được quản lý bởi Nhật Biện. Thêm repo vào Sileo, Zebra hoặc Cydia để nhận bản cập nhật mới nhất.',
+        copyRepo: 'Sao chép repo',
+        addSileo: 'Thêm vào Sileo',
+        addZebra: 'Thêm vào Zebra',
+        addCydia: 'Thêm vào Cydia',
+        repoStatus: 'Repo chính thức',
+        rootlessFocus: 'Tối ưu Rootless',
+        supportFast: 'Hỗ trợ cộng đồng',
+        infoTitle: 'Thông tin',
+        infoDesc: 'Thông tin nhanh về BVN Repo và kênh hỗ trợ.',
+        repoInfoTitle: 'BVN Repo',
+        repoInfoText: 'Repo dành cho cộng đồng jailbreak, tập trung vào tweak iOS, Việt hoá, rootless và các bản cập nhật do BVN Support quản lý.',
+        managerLabel: 'Quản lý',
+        repoUrlLabel: 'Repo URL',
+        supportLabel: 'Hỗ trợ',
+        donateTitle: 'Ủng hộ tôi',
+        donateText: 'Cảm ơn bro đã ủng hộ để repo có thêm động lực cập nhật tweak mới.',
+        bankNumberLabel: 'STK',
+        bankLabel: 'Ngân hàng',
+        bankOwnerLabel: 'Chủ TK',
+        copyStk: 'Sao chép STK',
+        connectTitle: 'Kết nối với BVN',
+        connectDesc: 'Theo dõi BVN để nhận thông báo repo, tweak mới và hỗ trợ lỗi.',
+        footerText: 'BVN Repo. Dành cho cộng đồng Jailbreak.',
+        copied: 'Đã sao chép',
+        copiedRepo: 'Đã sao chép repo',
+        copiedBank: 'Đã sao chép STK',
+        themeLight: 'Sáng',
+        themeDark: 'Tối',
+        themeSwitch: 'Đổi giao diện',
+        langSwitch: 'Đổi ngôn ngữ'
+      },
+      en: {
+        brandTagline: 'Jailbreak • Rootless',
+        eyebrow: 'BVN Support Repository',
+        subtitle: 'An iOS jailbreak tweak repository managed by Nhật Biện. Add this repo to Sileo, Zebra, or Cydia to get the latest updates.',
+        copyRepo: 'Copy repo',
+        addSileo: 'Add to Sileo',
+        addZebra: 'Add to Zebra',
+        addCydia: 'Add to Cydia',
+        repoStatus: 'Official repo',
+        rootlessFocus: 'Rootless optimized',
+        supportFast: 'Community support',
+        infoTitle: 'Information',
+        infoDesc: 'Quick details about BVN Repo and support channels.',
+        repoInfoTitle: 'BVN Repo',
+        repoInfoText: 'A repository for the jailbreak community, focused on iOS tweaks, Vietnamese localization, rootless builds, and updates managed by BVN Support.',
+        managerLabel: 'Manager',
+        repoUrlLabel: 'Repo URL',
+        supportLabel: 'Support',
+        donateTitle: 'Support me',
+        donateText: 'Thank you for supporting the repo and helping keep new tweak updates coming.',
+        bankNumberLabel: 'Account No.',
+        bankLabel: 'Bank',
+        bankOwnerLabel: 'Owner',
+        copyStk: 'Copy account',
+        connectTitle: 'Connect with BVN',
+        connectDesc: 'Follow BVN for repo announcements, new tweaks, and support.',
+        footerText: 'BVN Repo. Built for the Jailbreak Community.',
+        copied: 'Copied',
+        copiedRepo: 'Repo copied',
+        copiedBank: 'Account number copied',
+        themeLight: 'Light',
+        themeDark: 'Dark',
+        themeSwitch: 'Switch theme',
+        langSwitch: 'Switch language'
+      }
+    };
+
+    let currentLang = localStorage.getItem('bvnrepo-lang') || 'vi';
+    const systemTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    let currentTheme = localStorage.getItem('bvnrepo-theme') || systemTheme;
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function t(key) {
+      return (i18n[currentLang] && i18n[currentLang][key]) || i18n.vi[key] || key;
     }
 
-    function toggleDarkMode() {
-      const isDark = body.classList.contains("dark");
-      localStorage.setItem("bvn-theme", isDark ? "light" : "dark");
-      applyTheme();
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById("toast");
-      toast.textContent = message;
-      toast.classList.add("show");
-      setTimeout(() => toast.classList.remove("show"), 1700);
-    }
-
-    async function copyText(text) {
-      try {
-        await navigator.clipboard.writeText(text);
-        showToast("Đã sao chép");
-      } catch (error) {
-        const temp = document.createElement("textarea");
-        temp.value = text;
-        document.body.appendChild(temp);
-        temp.select();
-        document.execCommand("copy");
-        document.body.removeChild(temp);
-        showToast("Đã sao chép");
+    function updateThemeUi() {
+      const isLight = currentTheme === 'light';
+      document.body.setAttribute('data-theme', isLight ? 'light' : 'dark');
+      document.documentElement.style.colorScheme = isLight ? 'light' : 'dark';
+      if (themeMeta) themeMeta.setAttribute('content', isLight ? '#f4f8ff' : '#070A12');
+      if (themeIcon) themeIcon.textContent = isLight ? '🌙' : '☀️';
+      if (themeLabel) themeLabel.textContent = isLight ? t('themeLight') : t('themeDark');
+      if (themeToggle) {
+        const label = t('themeSwitch');
+        themeToggle.setAttribute('aria-label', label);
+        themeToggle.setAttribute('title', label);
+      }
+      if (langToggle) {
+        const langTitle = t('langSwitch');
+        langToggle.setAttribute('aria-label', langTitle);
+        langToggle.setAttribute('title', langTitle);
       }
     }
 
-    applyTheme();
+    function applyTheme(theme) {
+      currentTheme = theme === 'light' ? 'light' : 'dark';
+      localStorage.setItem('bvnrepo-theme', currentTheme);
+      updateThemeUi();
+    }
+
+    function applyLanguage(lang) {
+      currentLang = i18n[lang] ? lang : 'vi';
+      localStorage.setItem('bvnrepo-lang', currentLang);
+      document.documentElement.lang = currentLang;
+      if (langLabel) langLabel.textContent = currentLang.toUpperCase();
+      if (langToggle) {
+        const label = t('langSwitch');
+        langToggle.setAttribute('aria-label', label);
+        langToggle.setAttribute('title', label);
+      }
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        el.innerHTML = t(el.dataset.i18n);
+      });
+      updateThemeUi();
+    }
+
+    if (langToggle) {
+      langToggle.addEventListener('click', () => applyLanguage(currentLang === 'vi' ? 'en' : 'vi'));
+    }
+
+    function showToast(text) {
+      toast.textContent = text || t('copied');
+      toast.classList.add('show');
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => toast.classList.remove('show'), 1700);
+    }
+
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const value = btn.getAttribute('data-copy');
+        const kind = btn.getAttribute('data-copy-kind');
+        const message = kind === 'bank' ? t('copiedBank') : t('copiedRepo');
+        try {
+          await navigator.clipboard.writeText(value);
+          showToast(message);
+        } catch (_) {
+          const area = document.createElement('textarea');
+          area.value = value;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand('copy');
+          area.remove();
+          showToast(message);
+        }
+      });
+    });
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => applyTheme(currentTheme === 'light' ? 'dark' : 'light'));
+    }
+
+    if (window.matchMedia) {
+      const media = window.matchMedia('(prefers-color-scheme: light)');
+      const syncTheme = (event) => {
+        if (!localStorage.getItem('bvnrepo-theme')) {
+          currentTheme = event.matches ? 'light' : 'dark';
+          updateThemeUi();
+        }
+      };
+      if (media.addEventListener) media.addEventListener('change', syncTheme);
+      else if (media.addListener) media.addListener(syncTheme);
+    }
+
+    applyLanguage(currentLang);
+    updateThemeUi();
   </script>
 </body>
 </html>
