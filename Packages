@@ -4198,6 +4198,26 @@ Icon: https://evynw.github.io/depictions/sectionIcons/Fonts.png
 Name: Bauhaus
 Sileodepiction: https://bvnsupport.github.io/sileodepictions/Bauhaus.json
 
+Package: com.repobvn.DepthsL-Rootless
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Repo BVN
+Installed-Size: 7344
+Depends: firmware (>=15.0)
+Filename: debs/com.repobvn.DepthsL-Rootless_1.0.0_iphoneos-arm64.deb
+Size: 19558740
+MD5sum: a226f0f96e1ed8581a6ac725b18e7bdc
+SHA1: 3eda1d456eae79b2d2ce49f3af254101e60b1f02
+SHA256: e31203d2a14c9b8efd6468dedca9285c20cb0f0cb68313a0ccbae7aca4647654
+Section: Laetus Theme
+Description: Chủ đề bàn phím cho Laetus
+Author: Polyphian
+Depiction: http://support-jailbreak.github.io/infodeb/DepthsL/?p=info
+Icon: file:///var/jb/Library/IconRepo/chudee1.png
+Name: DepthsL (Rootless)
+Sileodepiction: https://support-jailbreak.github.io/sileodepictions/DepthsL.json
+Tags: compatible_min::ios15.0, compatible_max::ios16.4.1
+
 Package: com.repobvn.a-font-rootless
 Version: 1.10
 Architecture: iphoneos-arm64
@@ -4258,6 +4278,44 @@ Depiction: https://bvnrepo999.github.io/infodeb/Html/atria.html
 Icon: https://bvnrepo.xyz/icon/tinhchinh.png
 Name: Atria VH(Rootless)
 Sileodepiction: https://bvnrepo999.github.io/sileodepictions/atria.json
+
+Package: com.repobvn.autofaceunlock-rootless
+Version: 1.1-7
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 452
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: debs/com.repobvn.autofaceunlock-rootless_1.1-7_iphoneos-arm64.deb
+Size: 101122
+MD5sum: 4a32e7684d1e900be1d6071f6d94763a
+SHA1: fe10339ff0c03e9992b37a5aaec100dcc9ab41c7
+SHA256: 3fb072b5e9e3d0b145bd8878a172e89844751a559f6ce6a9032c8a20383d2c90
+Section: Tweaks
+Description: Nhận dạng khuôn mặt được mở khóa tự động mà không cần trượt lên để vào màn hình chính.
+Author: Netskao
+Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
+Name: AutoFaceUnlock (Rootless)
+
+Package: com.repobvn.centeredlabels-rootless
+Version: 1.3
+Architecture: iphoneos-arm64
+Maintainer: Repo BVN <bienvannhat97@gmail.com>
+Filename: debs/com.repobvn.centeredlabels-rootless_1.3_iphoneos-arm64.deb
+Size: 17098
+MD5sum: 316e8ef7d362fafe55651fdce0d60ffc
+SHA1: 6f7d15a8f75ee72f19615bc3b812684998a52edd
+SHA256: 787fdfbccd613796e4d340e84e410187c8ab08da8fe6d93b5999f27cb67d8b84
+Section: Tweaks
+Homepage: https://support-jailbreak.github.io
+Description: Căn giữa tất cả các mục trong trang Cài đặt của bạn.
+Tag: role::enduser
+Author: ETHN <ethanwhited2208@gmail.com>
+Depiction: https://support-jailbreak.github.io/depictions/CenteredLabels.html
+Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
+Name: CenteredLabels (Rootless)
+Sileodepiction: https://support-jailbreak.github.io/sileodepictions/CenteredLabels.json
+Someotherentrytocontrol: True
+Tags: compatible_min::ios13.0, compatible_max::ios16.4
 
 Package: com.repobvn.crane-rootless
 Version: 1.3.17-2k
@@ -4332,6 +4390,23 @@ Description: Thêm chức năng xóa nhanh tất cả ứng dụng trong đa nhi
 Author: Netskao
 Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
 Name: KillApps (Rootless)
+
+Package: com.repobvn.latesttranslate
+Version: 6.0.1
+Architecture: iphoneos-arm64
+Maintainer: Bvn Repo
+Installed-Size: 46592
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 17.0)
+Filename: debs/com.repobvn.latesttranslate_6.0.1_iphoneos-arm64.deb
+Size: 1956866
+MD5sum: 98bae4d3f233049ac51d2963d3c40d3a
+SHA1: 4e2778b7e3a09a86816a5a73f3e7ef5fe64a6220
+SHA256: 66e2f0fcbc897a9dbf5b4b45f49acd9edf54db49496281678698c06813804d2a
+Section: Tweaks
+Description: Thêm ngôn ngữ cho ứng dụng dịch của Apple
+Author: PoomSmart
+Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
+Name: LatestTranslate (Rootless)
 
 Package: com.repobvn.settingsrevamp
 Version: 2.1.1
