@@ -14,6 +14,413 @@ Description: Việt hoá giao diện DJI Fly (com.dji.golite)
 Author: BVN
 Name: DJI Fly Việt Hoá
 
+Package: com.bvn.fb++
+Version: 1.0.2
+Architecture: iphoneos-arm
+Maintainer: BVN
+Installed-Size: 740
+Depends: firmware (>= 14.0), mobilesubstrate
+Filename: debs/com.bvn.fb++_1.0.2_iphoneos-arm.deb
+Size: 163108
+MD5sum: d1d64c64b70d596c0d0bbb1211bd9f70
+SHA1: 0212de0b10c10f9f0bab67d7e77a43d87c89374e
+SHA256: ed31953ef3f12699a2ffd7dcc81c40a6d33c4cccc00ec87eca15dd3e4f6d42cc
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Facebook
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Facebook++ VN
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/fb++.json
+
+Package: com.bvn.fbpp
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 532
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.fbpp_1.0.0_iphoneos-arm64.deb
+Size: 120560
+MD5sum: bb8a70e9b71b988ebeb2bf9d73aeb10d
+SHA1: 70f984e0ad8782ad7caef4c0ab566fddd2944c1e
+SHA256: c8a04c4ef2b058b0928b0fe7c45ce581e0cd4b6964602172f7a601a20585f850
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Facebook
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Facebook++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/fb++.json
+
+Package: com.bvn.fbpp
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 648
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.fbpp_1.0.1_iphoneos-arm64.deb
+Size: 147024
+MD5sum: 165d39015c2a1b05cb6a6b2bacba69bf
+SHA1: 0c96d9c169ae9cc1ac88ee3b934e801ca5fdea5f
+SHA256: b4a48457645daf0944eaafd8276068cb7640100b5b6b9e37944a2072ad708491
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Facebook
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Facebook++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/fb++.json
+
+Package: com.bvn.fbpp
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 532
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.fbpp_1.0.2_iphoneos-arm64.deb
+Size: 163124
+MD5sum: 07c09e69dcfa1da70bddcc0c5ddd6d0e
+SHA1: e69d5b4e0d1dc2677b2f4e28e045fee3e157bdfa
+SHA256: 2cc9f39b5174c273f0bb7eed94b1f26d9189dffb0eaa7866aad2a720ca2bf2a3
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Facebook
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Facebook++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/fb++.json
+
+Package: com.bvn.ghostboard.rl
+Version: 5.5
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9464
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_5.5_iphoneos-arm64.deb
+Size: 3796364
+MD5sum: e5d32cb2dbaa59d20e770ebc25ea15f9
+SHA1: 135fed88bfd30c3bca8612cd3e6b03703d606f05
+SHA256: 3f8da7fba069643fe3a4b05d84512ca788d7c6fb47b4db858dace97f3dda393c
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 5.6
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9532
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi, com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_5.6_iphoneos-arm64.deb
+Size: 3830832
+MD5sum: 241da7b00ffdb23a1b31a9df89b9418f
+SHA1: 2e2934b7322803944a1c729ee70e761af6488ccf
+SHA256: 50163c905c1a5dcc9bce6efcc218098c585472ddd167bb74461559bcf3869a3e
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 5.7
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9548
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi, com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_5.7_iphoneos-arm64.deb
+Size: 3828516
+MD5sum: 189a2a391d4668b279004bbb74fda9f0
+SHA1: f9cc1d8715f6a9f5d26c45b6f9d4db9c1f79e49b
+SHA256: 639e279f2df5d7e55bed5c15243893a344afa542ce12e06bc35943c589c5fb16
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 5.8
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9732
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi, com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_5.8_iphoneos-arm64.deb
+Size: 3828592
+MD5sum: cb30c9e46574cf53f7015460429c1281
+SHA1: b15f92ddfed1c5e8edd083ccae5b7f6e6032ed54
+SHA256: d78266d58d3c03fd7d641de1198e77c8d53c8d1913a5bda37019378d0a610350
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 5.9
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9804
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi, com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_5.9_iphoneos-arm64.deb
+Size: 3842096
+MD5sum: d2c7c359572ba975b022fa46879ab519
+SHA1: 6bbc506d59f4383d428a4703c7c778bd60adc178
+SHA256: 8a53b887fd317947887728d5b4bea47c29d9a8618ca8470e9f6f1feebd14bfd7
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 6.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 9924
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi, com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard.rl_6.0_iphoneos-arm64.deb
+Size: 3889512
+MD5sum: 8d3427f93bc3e4be9fe5da253b505e51
+SHA1: 59b0434b48be76abdbe415e3bef095add08e93d8
+SHA256: df97eb1e852f2145eafb1ffd7ffd61ae09fe5c8d5a52d36b7304bcda50b8d419
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.hardbutton
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 464
+Depends: firmware (>= 15.0), mobilesubstrate, oldabi
+Filename: debs/com.bvn.hardbutton_1.0.0_iphoneos-arm64.deb
+Size: 11464
+MD5sum: 7251b2c45fcca3f0a58147bda998ff37
+SHA1: 89f19af04cdba521deadd3f8b496643511d2609c
+SHA256: ca5808d0002005943cea99118a1b0e155bbb58a655d2b5c0833ade2c4d4512d0
+Section: Tweaks
+Description: Hardware key actions for rootless iOS 15+.
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: HardButton (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/HardButton.json
+
+Package: com.bvn.mess++
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 304
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_0.0.1_iphoneos-arm64.deb
+Size: 53224
+MD5sum: 5c0871e0bbb26c180528d902afe29c9b
+SHA1: 42608a3f92881f465f99b8ac5f77d159f5e0d66c
+SHA256: ea35dd5f0655e45519f3bdd280de405d795f489bb75d27d88c809f09c0326556
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 400
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.0_iphoneos-arm64.deb
+Size: 78978
+MD5sum: 2ee6a96b8cc7d0eb9c3d84aa98155362
+SHA1: 263754ed647568f06b2011ff86d72d817d40f500
+SHA256: b2eb0c935136211fd0f954b273d976435e32ab566aef759b96acf4bfb3557112
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 432
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.1_iphoneos-arm64.deb
+Size: 87774
+MD5sum: c4a94751064b70f9fb4f2d9fc581f57d
+SHA1: 3808e829217be076667a78817db47b56ecd90da3
+SHA256: 3e4e15d3d0eb7b16b5130348e532cf6a6df3058cb7913627c9479cc292fd2dfd
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 520
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.2_iphoneos-arm64.deb
+Size: 103732
+MD5sum: 8477ee97e6341073d41ed502ae19c6c9
+SHA1: 220fc2a477d743098fadb8aa993b455cc3a1ccea
+SHA256: 56c85eceb34287496f4dcf95cda9935cbd145aebdfe3abcccc9c648c1193f611
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 588
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.3_iphoneos-arm64.deb
+Size: 114320
+MD5sum: aef0902a729fd8e401e132f2b38933e7
+SHA1: fae1a3e0a23471987197da286ee34cf3fa7e99a1
+SHA256: 0e3b95c93ea878cfc69a407d2c7f7d234a33b3af35c352bb2959f44fbda4f354
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 588
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.4_iphoneos-arm64.deb
+Size: 118092
+MD5sum: 7f77dd2e03058dd31463004fa3ad1193
+SHA1: 90b291977814cee7630842c00674a88ae8a6fcce
+SHA256: d35bdca5e8de5d57d1312c6aa071a3324aeac427122c96df7991cdb3c919da7c
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.5
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 680
+Depends: mobilesubstrate
+Filename: debs/com.bvn.mess++_1.0.5_iphoneos-arm64.deb
+Size: 135032
+MD5sum: 64578ef986029405faa0f02bf3c3f140
+SHA1: cf9b3ec82f27e75e31f099e8dcc0e992f8d5a02b
+SHA256: c9bf75f5b59f5c187ed85a7addb5adac48063f51a477af389605ec77b88e36a3
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.6
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 760
+Depends: mobilesubstrate, ws.hbang.common, oldabi
+Filename: debs/com.bvn.mess++_1.0.6_iphoneos-arm64.deb
+Size: 156796
+MD5sum: ca09a966dd394d2b23e316f9e6e02699
+SHA1: 4f5981932783fd3bc8ccaae3af9a36d95f984e46
+SHA256: 040928e78a9d0208c203ea70f3aaff6ce54943618acbd268b966a24cf0ed3e80
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 856
+Depends: mobilesubstrate, ws.hbang.common
+Filename: debs/com.bvn.mess++_1.0.7_iphoneos-arm64.deb
+Size: 180626
+MD5sum: af9ebf77435ac11a36c5523d7bf3af97
+SHA1: 7161032e4003e4b096a1dcf10ea87a81daa6dc21
+SHA256: c980b1e0a39c5c73f87ccfab4b5ba4d829ac87636fa0d08ae853215f5d016597
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất chi Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.mess++.rf
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: BVN
+Installed-Size: 856
+Depends: mobilesubstrate, ws.hbang.common
+Filename: debs/com.bvn.mess++.rf_1.0.7_iphoneos-arm.deb
+Size: 180524
+MD5sum: da2c288fa3f0b30f59e79b1e828f463f
+SHA1: 0731a2f6f1118a3d8e72bca258c100b43c161369
+SHA256: 89996e653b2e7a4808f3a21e3c6812e0d8da494e7d9a116145cfdc485fbb3980
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho Messenger
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Messenger++ VN
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/mess++.json
+
+Package: com.bvn.shortcutcrashfix
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 172
+Depends: mobilesubstrate
+Filename: debs/com.bvn.shortcutcrashfix_0.0.1_iphoneos-arm64.deb
+Size: 5524
+MD5sum: c04340b0f3f281e8a8953b776848d321
+SHA1: 8ba81ecfb96d9f4afb509f9c892c418c78d4758c
+SHA256: 5dda714639cb46c0472b9f743ca117b29ee4bef9afb8dc7560175227e15eb101
+Section: Tweaks
+Description: Sửa lỗi văng ứng dụng Phím tắt khi Jailbreak
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: ShortcutCrashFix
+
 Package: com.bvn.socialsuite
 Version: 1.0.4
 Architecture: iphoneos-arm64
@@ -33,4 +440,333 @@ Author: BVN
 Icon: https://bvnrepo.xyz/icon/tinhchinh.png
 Name: Social Suite (Rootless)
 Sileodepiction: https://bvnrepo999.github.io/sileodepictions/SocialSuite.json
+
+Package: com.bvn.speedads2k26
+Version: 1.1.6k
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 456
+Depends: com.opa334.altlist, preferenceloader, oldabi
+Filename: debs/com.bvn.speedads2k26_1.1.6k_iphoneos-arm64.deb
+Size: 69116
+MD5sum: f81264cb860d817997ff5da14ac36b07
+SHA1: 1442062e27312ee21218cd71ebd6d4b9569d0d0a
+SHA256: b6c1d0b155ec7264ab8d8a55b5e56eea0995365992a6452ed3720c325ac48735
+Section: Tweaks
+Description: A properly made tweak to speed up any modern ad
+Author: 0xkuj
+Depiction: https://bvnrepo999.github.io/infodeb/Html/SpeedAds2k26.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: SpeedAds2k26 VH(Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/SpeedAds2k26.json
+
+Package: com.bvn.speedads2k26
+Version: 1.1.8k
+Architecture: iphoneos-arm64
+Maintainer: 0xkuj
+Installed-Size: 456
+Depends: com.opa334.altlist, preferenceloader
+Filename: debs/com.bvn.speedads2k26_1.1.8k_iphoneos-arm64.deb
+Size: 63260
+MD5sum: c48af33285fb5a1bb97d3f55934db6f6
+SHA1: d736cdaac9d7fbde993c491e2fa777935deaa410
+SHA256: be47e47656615763fe04c554e5e3e5fe55e645c2874ad33fc22fffd7aa5b36fa
+Section: Tweaks
+Description: A properly made tweak to speed up any modern ad
+Author: 0xkuj
+Depiction: https://bvnrepo999.github.io/infodeb/Html/SpeedAds2k26.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: SpeedAds2k26 VH(Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/SpeedAds2k26.json
+
+Package: com.bvn.spotify
+Version: 6.6.3.1
+Architecture: iphoneos-arm64
+Maintainer: jaydenjcpy
+Installed-Size: 23464
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0), xyz.cypwn.xinam1ne
+Conflicts: com.bvn.protobuf.swiftprotobuf, org.swift.protobuf.swiftprotobuf, xyz.cypwn.swiftprotobuf
+Filename: debs/com.bvn.spotify_6.6.3.1_iphoneos-arm64.deb
+Size: 1858064
+MD5sum: 14f65148c70e3793eceee27f8aaff949
+SHA1: aff5794d3f62a471821a496cc3c6b48abd8ba4a9
+SHA256: ba38fec80c5950161052faf0774b5a5c03d440ee18d934efa1658a4847882d02
+Section: Tweaks
+Description: A tweak to get Spotify Premium for free, just like Spotilife
+Author: Eevee
+Depiction: http://bvnrepo999.github.io/infodeb/Html/EeveeSpotify.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: EeveeSpotify VH
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/EeveeSpotify.json
+
+Package: com.bvn.spotify
+Version: 6.6.5
+Architecture: iphoneos-arm64
+Maintainer: jaydenjcpy
+Installed-Size: 24120
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 14.0)
+Filename: debs/com.bvn.spotify_6.6.5_iphoneos-arm64.deb
+Size: 2017260
+MD5sum: 241cb40b416563a7cc7db51df47c4cea
+SHA1: be1115b0e9c4d4b82793d5b346e4138d33c51ed5
+SHA256: abb7a7397bf61ed6f3f03fdd1b19db959c973ec026f751d8be0cf44b22d16b6a
+Section: Tweaks
+Description: A tweak to get Spotify Premium for free, just like Spotilife
+Author: Eevee
+Depiction: http://bvnrepo999.github.io/infodeb/Html/EeveeSpotify.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: EeveeSpotify VH(Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/EeveeSpotify.json
+
+Package: com.bvn.tiktok
+Version: 1.0.4
+Architecture: iphoneos-arm
+Maintainer: BvN
+Installed-Size: 948
+Depends: firmware (>= 14.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok_1.0.4_iphoneos-arm.deb
+Size: 191932
+MD5sum: 827a2a27576cf181faa96383a7367f61
+SHA1: d78b535b6e0b53aa9f5922e3a11ac98cef65d896
+SHA256: 1811d6efc4bef6cf6cb9d0c38c87f23b4f20965c3d03a7033c6641619533631d
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Tiktok
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ VN
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 620
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_0.0.1_iphoneos-arm64.deb
+Size: 118560
+MD5sum: ec4555571ef4cdac7f6dc74369137681
+SHA1: bd9f7e942924281c48e0f2832e9b29cac829adb2
+SHA256: 14c0f3680f7c7bac5679561590f8e15108ddd9d78cd65814209f52ade8639d19
+Section: Tweaks
+Description: Tỉnh chỉnh tuyệt vời cho Tiktok
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 464
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_1.0.0_iphoneos-arm64.deb
+Size: 92312
+MD5sum: ff743f00fce7a7d6ded2491aecb55a37
+SHA1: 1adae56adbbfd374889ec368e716b53936b080a7
+SHA256: 5d09acae3457606b99a3a918c6514d482e17ec2d3e6e6b044932b2f46a91a6c4
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho Timtok
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: BvN Repo
+Installed-Size: 464
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_1.0.1_iphoneos-arm64.deb
+Size: 93548
+MD5sum: 54d8a72206dea8dae1b7c5a2d92f48c6
+SHA1: 47a57d990d092170033051e48f0c35ab42dbaa88
+SHA256: 7c5bd31c0fab222851e83cc6d8be434c5ee0cf0e5b5b0b662d79d8adb9c65086
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng tiktok
+Author: BVN Repo
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 496
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_1.0.2_iphoneos-arm64.deb
+Size: 101960
+MD5sum: b099f46ce557cb5d88d2ec037d7b15fc
+SHA1: 191bfc69005facb7f019a74a0f632e70f156d323
+SHA256: 82d3cd056394cedcd18bc34c4d45abff6924854d8c14eff8ea1ecc043b64dd6e
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng tiktok
+Author: BVn
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: BvN
+Installed-Size: 628
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_1.0.3_iphoneos-arm64.deb
+Size: 131440
+MD5sum: 256e70b1953a75e3646480885ee27fbd
+SHA1: 216076cae1bf51780414b249c4d9153dd327c0af
+SHA256: 3a3554441f7babf2b1f9bbf1f959f8e9b8c377909ae619b560152fb605040a24
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Tiktok
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.tiktok++
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: BvN
+Installed-Size: 948
+Depends: firmware (>= 14.0), mobilesubstrate
+Filename: debs/com.bvn.tiktok++_1.0.4_iphoneos-arm64.deb
+Size: 191748
+MD5sum: 3a9949f4ce22457196b322fbb41486ed
+SHA1: 9ea5056a21fc1f4f3a17e5be81beaee626b1a4d7
+SHA256: f3cf494525117d1d675cd2367989952cae44a27881651f5572f1b7fab7e2c4f3
+Section: Tweaks
+Description: Tinh chỉnh tốt nhất cho ứng dụng Tiktok
+Author: BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Tiktok++ (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/tiktok++.json
+
+Package: com.bvn.ytlite
+Version: 5.2.2
+Architecture: iphoneos-arm64
+Maintainer: dvntm
+Installed-Size: 20372
+Depends: mobilesubstrate
+Filename: debs/com.bvn.ytlite_5.2.2_iphoneos-arm64.deb
+Size: 7332392
+MD5sum: 97fb734e963c81dba74e3500ab5ad165
+SHA1: 70a173047a1f0c596017d6bee3b199d47b17d1c1
+SHA256: a8767c023337d36558eb44057fa8c4131c45520d57faf49848346b023c30c926
+Section: Tweaks
+Description: Lightweight YouTube Enhancer
+Author: dvntm
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Youtube Plus (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/YTLite.json
+
+Package: com.bvnrepo.bvnringtoness
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: BVN Repo
+Installed-Size: 276
+Depends: preferenceloader, firmware (>= 15.0), oldabi
+Filename: debs/com.bvnrepo.bvnringtoness_1.0.0_iphoneos-arm64.deb
+Size: 53524
+MD5sum: 2cb0cd620f09d1f784774ee7f5781096
+SHA1: 1f75010f25d245510d04ff8508cf681740861c94
+SHA256: 7b606599724ee0bd82017c6bbb892233b33f85aee2c06452b0cc3859ddbaa5bd
+Section: Tweaks
+Description: Tạo nhạc chuông ngay trên thiết bị của bạn
+Author: BVN Repo
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: BVNRingTones (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/bvnringtones.json
+
+Package: com.bvnrepo.bvnringtoness
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: BVN Repo
+Installed-Size: 340
+Depends: preferenceloader, firmware (>= 12.0)
+Filename: debs/com.bvnrepo.bvnringtoness_1.0.1_iphoneos-arm64.deb
+Size: 68612
+MD5sum: dcc2d78aadbae9722336acea4930af13
+SHA1: ecb6568937dfb16e6df91598c02512bbc201e607
+SHA256: eaeff7f4ddcdeb9eb00e95a1b5ff316206f0a79abb5bd80459707d19f4a3ab4b
+Section: Tweaks
+Description: tao nhạc chuông ngay trên thiết bị của bạn
+Author: BVN Repo
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: BVNRingTones (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/bvnringtones.json
+
+Package: com.bvnrepo.bvnringtoness.rf
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: BVN Repo
+Installed-Size: 276
+Depends: preferenceloader, firmware (>= 12.0)
+Filename: debs/com.bvnrepo.bvnringtoness.rf_1.0.0_iphoneos-arm.deb
+Size: 53236
+MD5sum: 03dcd79c90ce4057013714f1a19914c8
+SHA1: 3691d92786fd63f1a48d3df6be0dde62dbbb6531
+SHA256: 69017e41832d0da9b704d9c111ac7822466b041c768d337cc92577a2533c7a95
+Section: Tweaks
+Description: Tajo nhạc chuông ngay trên thiết bị của bạn
+Author: BVN Repo
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: BVNRingTones (Rootfull)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/bvnringtones.json
+
+Package: com.repo.appdata-rootless
+Version: 2.0.1
+Architecture: iphoneos-arm64
+Maintainer: iosdump
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader, oldabi
+Conflicts: com.netskao.appdatas, com.netskao.appdata, cn.zqbb.appdata, com.fouadraheb.appdata, com.bvn.appdatavn
+Filename: debs/com.repo.appdata-rootless_2.0.1_iphoneos-arm64.deb
+Size: 254224
+MD5sum: 2924193e4e59d36852aa9958ccaabaec
+SHA1: 7cd164eb378020e00c69839a170aa1d299044c1b
+SHA256: e7acf4bf2584183d3dc14ce87419304c54b48cc5ae56407e5302b7b44d48fc80
+Section: Tweaks
+Description: Xem và quản lý dữ liệu ứng dụng từ màn hình chính
+Author: Fouad Raheb
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: AppData VH(Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/AppData.json
+
+Package: com.repo.appdata-rootless
+Version: 2.0.2
+Architecture: iphoneos-arm64
+Maintainer: Nets
+Installed-Size: 5156
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader, com.bvn.appdatavn
+Filename: debs/com.repo.appdata-rootless_2.0.2_iphoneos-arm64.deb
+Size: 1499764
+MD5sum: aaaa018bff605de477030e31e542ab8d
+SHA1: 4790fddcb9a1bdc36e7457da83dca36be36e112c
+SHA256: 9b25bdd8208dfce235ebebfc0fef97eef346df21976eec08e8df5eb8c0c1c5ba
+Section: Tweaks
+Description: Xem và quản lý dữ liệu ứng dụng từ màn hình chính
+Author: Fouad Raheb
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: AppData VH(Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/AppData.json
+
+Package: me.repobvn.switchmate
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Repo BVN
+Installed-Size: 448
+Depends: mobilesubstrate, preferenceloader, ws.hbang.common, firmware (>= 15.0)
+Filename: debs/me.repobvn.switchmate_1.0.0_iphoneos-arm64.deb
+Size: 33632
+MD5sum: 4b3e78c4c852b2cb2dd75b080548aa50
+SHA1: 68e6e81bad94af8b8e6c7d12cbb615785bc66ad3
+SHA256: 15f2c6b662be271821b031c842a406b172842e4571e7c018adf05300d48fe9cd
+Section: Tweaks
+Description: Tuỳ chỉnh cần gạt rung thành nút thao tác nhanh.
+Author: Repo BVN
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: SwitchMate (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/SwitchMate.json
 
