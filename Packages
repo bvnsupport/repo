@@ -13580,6 +13580,26 @@ Icon: https://bvnsupport.github.io/depictions/sectionIcons/appcrack.png
 Name: Genie Pro
 Sileodepiction: https://bvnsupport.github.io/sileodepictions/Genie.json
 
+Package: com.bvn.ghostboard
+Version: 6.3
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 10320
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), com.mrgcgamer.libgcuniversal
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2
+Filename: debs/com.bvn.ghostboard_6.3_iphoneos-arm64.deb
+Size: 3928416
+MD5sum: 2cb11db588aae71ef76c91d0144bd518
+SHA1: 3641c548c76436bfa6fe577c3b380493f8130744
+SHA256: a31a5f402b574a99bf09480d7acc9e2441934783d6612387e1b930af5f49c949
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
 Package: com.bvn.ghostboard.rf
 Version: 2.5
 Architecture: iphoneos-arm
