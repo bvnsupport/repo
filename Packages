@@ -13600,6 +13600,28 @@ Icon: https://bvnrepo.xyz/icon/tinhchinh.png
 Name: GhostBoard (Rootless)
 Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
 
+Package: com.bvn.ghostboard.7.0.r2
+Version: 7.0
+Architecture: iphoneos-arm64e
+Maintainer: BVN
+Installed-Size: 10784
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), com.mrgcgamer.libgcuniversal, com.opa334.ccsupport, ws.hbang.alderis, oldabi
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2, com.ttt.cccurrentmodule, com.bvn.batteryinfomodule, com.bvn.ccborder15plus, com.jtis.ccbonder16, com.fiore.ccborder, com.p2kdev.ccborder
+Replaces: com.ttt.cccurrentmodule, com.bvn.batteryinfomodule, com.bvn.ghostboard.rl, com.bvn.ghostboard
+Filename: debs/com.bvn.ghostboard.7.0.r2_7.0_iphoneos-arm64e.deb
+Size: 4034644
+MD5sum: ccda037b6bb8dc5b88c2961e27392d29
+SHA1: 39db4512d05ff2f71390222fba08dd221ca7b0c5
+SHA256: 5b724ea2e9ede1ca33ba40fb2701379399d80e4970316c2c0feb409679da4c49
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Roothide)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
 Package: com.bvn.ghostboard.rf
 Version: 2.5
 Architecture: iphoneos-arm
@@ -14742,6 +14764,27 @@ Size: 3828584
 MD5sum: 2352c498b5238ac1a58a517945f833b5
 SHA1: 121ff4e59d584215699a8b475e09e6a1d7a27057
 SHA256: 54d328f97fa9ba79afb12e5d507591e8624166574e58030c16522971451cb788
+Section: Tweaks
+Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
+Author: BVN
+Depiction: https://bvnrepo999.github.io/infodeb/Html/GhostBoard.html
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: GhostBoard (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/GhostBoard.json
+
+Package: com.bvn.ghostboard.rl
+Version: 7.0
+Architecture: iphoneos-arm64
+Maintainer: BVN
+Installed-Size: 10784
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), com.mrgcgamer.libgcuniversal, com.opa334.ccsupport, ws.hbang.alderis, oldabi
+Conflicts: com.den.locktouchx, com.bvn.lockscreenbatterymagsafe.r2, com.bvn.lockscreenbatterymagsafe, com.bvn.locktouchx.h2, com.bvn.locktouchx, com.jtisvn.unlockboard, com.bvn.infobattery, com.bvn.infobattery-r2, com.ttt.cccurrentmodule, com.bvn.batteryinfomodule, com.bvn.ccborder15plus, com.jtis.ccbonder16, com.fiore.ccborder, com.p2kdev.ccborder
+Replaces: com.ttt.cccurrentmodule, com.bvn.batteryinfomodule, com.bvn.ghostboard.rl
+Filename: debs/com.bvn.ghostboard.rl_7.0_iphoneos-arm64.deb
+Size: 4026536
+MD5sum: 597077e9a350faf58dfe959cf73142b2
+SHA1: f4a124116dac61513fd0f300a2167d58d98c03bb
+SHA256: 11455e8733aac7e7b2a738063d3fdc4e211e3883b81fd9cf2ef4123540b6f375
 Section: Tweaks
 Description: Ẩn nền Dock,ẩn dấu chấm trang,ẩn viên thuốc tìm kiếm,ẩn tên ứng dụng
 Author: BVN
