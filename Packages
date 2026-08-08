@@ -12552,6 +12552,45 @@ Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
 Name: Edge 2 VH(Rootless)
 Sileodepiction: https://bvnsupport.github.io/sileodepictions/edge2.json
 
+Package: com.bvn.edge3
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: BvN
+Installed-Size: 1660
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader, com.yan.lottie, oldabi
+Conflicts: com.bvn.edge2, io.securarepo.edge, com.junesiphone.lockpluspro, com.bvn.auroranotify
+Filename: debs/com.bvn.edge3_1.0.2_iphoneos-arm64.deb
+Size: 162044
+MD5sum: 7926faeb57c6e303a2f35713e6e3ee1c
+SHA1: ecad989bdd21a7953a6f0e8c7a9c7ecbc851bc01
+SHA256: f7b829f410fe4aa5dbfc4b5b4dc674a5029f03cf0a2d3a0eaf8b50e3e016ed29
+Section: Tweaks
+Description: Viền chuyển màu động Edge3 và hiệu ứng thông báo AuroraNotify, hỗ trợ iOS 15+ rootless.
+Author: BvN / Nebbs + Max Bridgland
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Edge 3 (Rootless)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/Edge3.json
+
+Package: com.bvn.edge3.r2
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: BvN
+Installed-Size: 1660
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader, com.yan.lottie, oldabi
+Conflicts: com.bvn.edge2, io.securarepo.edge, com.junesiphone.lockpluspro, com.bvn.auroranotify
+Filename: debs/com.bvn.edge3.r2_1.0.2_iphoneos-arm64e.deb
+Size: 161324
+MD5sum: cd3ca2b4f1b636292fc681a0cf6e35db
+SHA1: b103965c639b17c89d32ee9499bca780ececb143
+SHA256: 022d339eeae4e6804cc84dd75af69d0d4a3b5eff6a190fa6efa2a9368fe5b22f
+Section: Tweaks
+Description: Viền chuyển màu động Edge3 và hiệu ứng thông báo AuroraNotify, hỗ trợ iOS 15+ rootless.
+Author: BvN / Nebbs + Max Bridgland
+Icon: https://bvnrepo.xyz/icon/tinhchinh.png
+Name: Edge 3 (Roothide)
+Sileodepiction: https://bvnrepo999.github.io/sileodepictions/Edge3.json
+
 Package: com.bvn.epikpatch
 Version: 0.0.2
 Architecture: iphoneos-arm
